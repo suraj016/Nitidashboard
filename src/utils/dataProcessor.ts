@@ -7,7 +7,7 @@ const monthOrder: Month[] = [
 ];
 
 export function getMonthlyAverageRSP(filters: FilterState): MonthlyAverageRSP[] {
-  const filteredData = rspData.filter(
+  const filteredData: RSPDataEntry[] = rspData.filter(
     (entry) =>
       entry.city === filters.city &&
       entry.fuelType === filters.fuelType &&
